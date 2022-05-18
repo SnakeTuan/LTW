@@ -4547,3 +4547,4 @@ java.net.URISyntaxException: Illegal character in path at index 12: file:/G:/HOC
 2022-05-11 21:10:53,810 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-05-11 21:10:53,810 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-05-11 21:10:53,810 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\HOC ONLINE\LAP TRINH WEB\SPRING TOOL\WorkSpaceREST\WorkSpace\taco-cloud\src\test\resources
+2022-05-18 15:04:07,645 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

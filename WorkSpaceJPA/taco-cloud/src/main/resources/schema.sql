@@ -5,37 +5,33 @@ type varchar(10) not null,
 PRIMARY KEY (id)
 );
 create table if not exists Taco (
-id int NOT NULL,
+id int NOT NULL AUTO_INCREMENT,
 name varchar(50) not null,
-createdAt timestamp not null,
+created_at timestamp not null,
 PRIMARY KEY (id)
 );
 create table if not exists Taco_Ingredients (
-taco int not null,
-ingredient varchar(4) not null,
-FOREIGN KEY (taco) REFERENCES Taco(id),
-FOREIGN KEY (ingredient) REFERENCES Ingredient(id)
+taco_id int not null,
+ingredients_id varchar(4) not null,
+FOREIGN KEY (taco_id) REFERENCES Taco(id),
+FOREIGN KEY (ingredients_id) REFERENCES Ingredient(id)
 );
 create table if not exists Taco_Order (
-
-id int NOT NULL,
-
-deliveryName varchar(50) not null,
-deliveryStreet varchar(50) not null,
-deliveryCity varchar(50) not null,
-deliveryState varchar(2) not null,
-deliveryZip varchar(10) not null,
-ccNumber varchar(16) not null,
-ccExpiration varchar(5) not null,
-ccCVV varchar(3) not null,
-placedAt timestamp not null,
-
+id int NOT NULL AUTO_INCREMENT,
+name varchar(50) not null,
+street varchar(50) not null,
+city varchar(50) not null,
+state varchar(2) not null,
+zip varchar(10) not null,
+cc_number varchar(16) not null,
+cc_expiration varchar(5) not null,
+cccvv varchar(3) not null,
+placed_at timestamp not null,
 PRIMARY KEY (id)
-
 );
 create table if not exists Taco_Order_Tacos (
-tacoOrder int not null,
-taco int not null,
-FOREIGN KEY (tacoOrder) REFERENCES Taco_Order(id),
-FOREIGN KEY (taco) REFERENCES Taco(id)
+tacoOrder_id int not null,
+taco_id int not null,
+FOREIGN KEY (tacoOrder_id) REFERENCES Taco_Order(id),
+FOREIGN KEY (taco_id) REFERENCES Taco(id)
 );

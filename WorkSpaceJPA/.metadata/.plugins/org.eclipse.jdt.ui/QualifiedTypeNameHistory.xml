@@ -14,6 +14,7 @@
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
     <fullyQualifiedTypeName name="tacos.data.TacoRepository"/>
-    <fullyQualifiedTypeName name="tacos.data.OrderRepository"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="tacos.Order"/>
+    <fullyQualifiedTypeName name="tacos.data.OrderRepository"/>
 </qualifiedTypeNameHistroy>
